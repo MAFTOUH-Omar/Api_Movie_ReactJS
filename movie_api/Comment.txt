@@ -1,0 +1,1 @@
+npm init react-app <<Nom de l'application>>
