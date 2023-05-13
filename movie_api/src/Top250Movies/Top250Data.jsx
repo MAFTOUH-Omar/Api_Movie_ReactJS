@@ -46,10 +46,3 @@ function CardMovie(props){
     )
 }
 export default Top250Data;
-// rank
-// title
-// fullTitle
-// year
-// image
-// crew
-// imDbRating

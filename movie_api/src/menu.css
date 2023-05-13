@@ -1,0 +1,14 @@
+.btn:hover{
+    background-color: #000;
+    transition: 0.5s;
+    letter-spacing:1px;
+}
+.btn{
+    transition: 0.5s;
+}
+Link{
+    text-decoration: none;
+}
+h1{
+    font-family:monospace;
+}
