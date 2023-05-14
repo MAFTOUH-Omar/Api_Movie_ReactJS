@@ -3,9 +3,8 @@ import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
 import Top250Movies from "./Top250Movies/Top250Data";
 import Top250TV from "./Top250Tvs/Top250Tvs";
 import SearchMovieSerie from './Search/SearchMovieSerie';
+import CommingSoon from './CommingSoon/CommingSoon';
 import './menu.css';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 function Menu(){
     return(
         <Router>
@@ -40,6 +39,7 @@ function Menu(){
                     <Route path="Top250Movies" element={<Top250Movies/>}/>
                     <Route path="/" element={<SearchMovieSerie/>}/>
                     <Route path="Top250TV" element={<Top250TV/>}/>
+                    <Route path="CommingSoon" element={<CommingSoon/>}/>
                 </Routes>
             </div>
             </div>

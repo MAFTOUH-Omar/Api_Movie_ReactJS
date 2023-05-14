@@ -12,7 +12,7 @@ function Top250Tvs(){
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <h1 className='text-primary text-center'>Top 250 Tvs</h1>
+                    <h1 className='text-primary text-center'>Top <div className="badge bg-primary">250</div> Tvs</h1>
                 </div>
                 <div className="row">
                     {tv && tv.map((x)=>

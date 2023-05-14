@@ -12,7 +12,7 @@ function Top250Data(){
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <h1 className='text-center text-success'>Top 250 Movies</h1>
+                    <h1 className='text-center text-success'>Top <div className="badge bg-success">250</div> Movies</h1>
                 </div>
             </div>
             <div className="row my-2">
