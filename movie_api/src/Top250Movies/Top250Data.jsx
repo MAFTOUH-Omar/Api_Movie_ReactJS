@@ -15,7 +15,7 @@ function Top250Data(){
                     <h1 className='text-center text-success'>Top 250 Movies</h1>
                 </div>
             </div>
-            <div className="row">
+            <div className="row my-2">
                 {movie && movie.map((x) => <CardMovie movie={x} />)}
             </div>
         </div>
@@ -39,7 +39,7 @@ function CardMovie(props){
                 </div>
             </div>
             <div className="card-footer border-dark">
-                <h4 className='badge bg-success form-control border-dark'>{props.movie.imDbRating}</h4>
+                <div className='alert alert-success'>Rating : {props.movie.imDbRating}/10</div>
             </div>
         </div>
     </div>

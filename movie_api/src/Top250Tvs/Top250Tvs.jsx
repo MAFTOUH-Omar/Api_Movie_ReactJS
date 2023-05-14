@@ -24,26 +24,23 @@ function Top250Tvs(){
     )
 }
 function CardTvs(props){
-    var progressVal=props.tv.imDbRating*100;
-    var myStyle={
-        width:`${progressVal}px`
-    }
     return(
-        <div className="col-4">
-            <div className="card text-center">
+        <div className="col-4 my-2">
+            <div className="card text-center border-dark">
                 <div className="card-img-top">
                     <img src={props.tv.image} className='imgTv'/>
                 </div>
                 <div className="card-body">
-                    <tr><td>Title:</td><td>{props.tv.title}</td></tr>
-                    <tr><td>FullTitle:</td><td>{props.tv.fullTitle}</td></tr>
-                    <tr><td>Year:</td><td className='badge bg-success'>{props.tv.year}</td></tr>
-                    <tr><td>Crew:</td><td className='badge bg-secondary'>{props.tv.crew}</td></tr>
+                    <table className='table table-bordered table-striped table-hover border-dark'>
+                        <tr><td>id:</td><td>{props.tv.id}</td></tr>
+                        <tr><td>Title:</td><td>{props.tv.title}</td></tr>
+                        <tr><td>FullTitle:</td><td>{props.tv.fullTitle}</td></tr>
+                        <tr><td>Year:</td><td className='badge bg-success'>{props.tv.year}</td></tr>
+                        <tr><td>Crew:</td><td className='badge bg-secondary'>{props.tv.crew}</td></tr>
+                    </table>
                 </div>
                 <div className="card-footer">
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={myStyle}></div>
-                    </div>
+                    <div className="alert alert-success">Rating : {props.tv.imDbRating}/10</div>
                 </div>
             </div>
         </div>
